@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="manifest" href="manifest.json"/>
+  <title>Sticky Notes</title>
+</head>
+
+<body>
+  <div id="heading">
+    <h1>Stick-It Notes</h1>
+    <p id="ts">By Neel Mehta</p>
+  </div>
+  <div>
+    <form id="inputForm">
+      <input type="text" class="inputText" placeholder="Title" id="new-note-title-input" autocomplete="Off" required
+        autofocus />
+      <input type="text" class="inputText" placeholder="Note Content" id="new-note-body-input" autocomplete="Off"
+        required />
+      <button id="btnSubmit" type="submit" class="btn">
+        Create Note
+      </button>
+    </form>
+  </div>
+  <h3 id="no-notes">No notes found, Add one!</h3>
+  
+  <ul id="notes">
+    <li>
+      <a href="#">
+        <h2>Some note</h2>
+        <button class="delete">X</button>
+        <p>Content of the note</p>
+      </a>
+    </li>
+  </ul>
+  <script src="./js/script.js"></script>
+</body>
+</html>
